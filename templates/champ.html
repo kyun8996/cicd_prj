@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champion Recommendation</title>
+</head>
+<body>
+    {% if recommended_champion_name %}
+        <h1>추천 챔피언: {{ recommended_champion_name }}</h1>
+        <img src="/imgs/{{ recommended_champion_name }}.png" alt="{{ recommended_champion_name }} 이미지" width="200">
+    {% endif %}
+</body>
+</html>
