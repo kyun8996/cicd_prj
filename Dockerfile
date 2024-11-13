@@ -12,6 +12,8 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 # 애플리케이션 파일 복사 (main.py와 필요한 폴더들)
 COPY ./main.py /code/main.py
+COPY ./practice.py /code/practice.py
+COPY ./riot_module.py /code/riot_module.py
 COPY ./imgs /code/imgs
 COPY ./templates /code/templates
 COPY ./__pycache__ /code/__pycache__
